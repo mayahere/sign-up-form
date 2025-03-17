@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="background-image">
+      <div class="logo">
+        <img src="./assets/odin-lined.png" alt="Logo">
+        <div class="logo-text">ODIN</div>
+      </div>
+    </div>
+    <div class="sign-up-form">
+      <div class="banner">
+        <div class='long-text'>
+          <div>
+            This is not a real online service! 
+            You know you need something like this in your life to help you realize your deepest dreams.
+          </div>
+           <div>Sign up <em>know</em> to get started.</div>
+        </div>
+        <div class="short-text">
+          You <em>know</em> you want to.
+        </div>
+      </div>
+      <form action="/submit" method="POST" id="signup-form">
+        <div class="form-title">Let's do this!</div>
+        <div class="form">
+          <div class="input-container">
+            <label for="firstname">FIRST NAME</label>
+            <input 
+              type="text" 
+              id="firstname" 
+              name="firstname" 
+              required
+            >
+          </div>
+          <div class="input-container">
+            <label for="lastname">LAST NAME</label>
+            <input 
+              type="text" 
+              id="lastname" 
+              name="lastname"
+              required
+            >
+          </div>
+          <div class="input-container">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="example@email.com"
+            required
+            >
+          </div>
+          <div class="input-container">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone"
+            pattern="(84|0[35789])[0-9]{8}\b"
+            >
+          </div>
+          <div class="input-container">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password"
+            placeholder="Abcdef"
+            pattern="(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            required
+            >
+          </div>
+          <div class="input-container">
+            <label for="confirm_password">CONFIRM PASSWORD</label>
+            <input type="password" name="password_confirmation" id="confirm_password" 
+            required>
+          </div>
+        </div>
+      </form>
+      <div class="footer">
+        <button type="submit">Create Account</button>
+        <div class="terms">Already have an account? <a href="#">Log in</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src='script.js'></script>
+</html>

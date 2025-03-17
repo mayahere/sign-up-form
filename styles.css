@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('./assets/Norsebold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: black;
+  padding: 0px 256px;
+  display: flex;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+.background-image {
+  width: 45%;
+  height: 100%;
+  background-image: url('./assets/background.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-form {
+  width: 55%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.logo {
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 100%;
+  height: 150px;
+  padding: 8px 0px;
+  font-family: 'NorseFont', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.logo-text {
+  font-family: 'Norse', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: white;
+}
+
+.banner {
+  height: 35%;
+  background-color: rgb(241, 241, 241);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 16px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 16px;
+}
+
+.footer {
+  height: 35%;
+  background-color: rgb(241, 241, 241);
+}
+
+.long-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 16px;
+  max-width: 600px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 250px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input:focus {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  outline-color: blue;
+}
+
+input:invalid {
+  border-color: #dc3545;
+}
+
+input:invalid:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.footer {
+  padding: 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+button {
+  width: fit-content;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #408000;
+  color: white;
+  border: 1px solid #408000;
+  border-radius: 4px;
+}
+.terms {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #408000;
+}
