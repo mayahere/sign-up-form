@@ -59,14 +59,16 @@
           <div class="input-container">
             <label for="phone">PHONE NUMBER</label>
             <input type="tel" id="phone" name="phone"
-            pattern="(84|0[35789])[0-9]{8}\b"
+            pattern="[0-9]{10}\b"
+            placeholder="Ex: 0123645789"
             >
           </div>
           <div class="input-container">
             <label for="password">PASSWORD</label>
             <input type="password" id="password" name="password"
             placeholder="Abcdef"
-            pattern="(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            pattern="(?=.*[A-Z])(?=.*[a-z]).{8,}"
+            placeholder="Ex: Password"
             required
             >
           </div>
