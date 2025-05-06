@@ -16,7 +16,6 @@ btn.addEventListener('click', (e) => {
     confirmPassword.classList.remove("invalid");
     console.log("Password Matched!");
 
-    // Simulate form submission
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
     console.log('Form submitted:', data);
